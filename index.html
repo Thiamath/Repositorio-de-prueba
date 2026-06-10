@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo: escribir en Storage</title>
+    <link rel="stylesheet" href="../../../../../styles.css" />
+    <style>
+      body { max-width: 600px; margin: 2rem auto; padding: 1rem; }
+      .panel { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin: 1rem 0; }
+      .success { color: var(--success); }
+      code { word-break: break-all; }
+    </style>
+  </head>
+  <body>
+    <h2>Página A: escribe datos</h2>
+    <p>Esta página guarda datos tanto en <code>localStorage</code> como en <code>sessionStorage</code>.</p>
+
+    <div class="panel" id="local-panel">
+      <h3>localStorage</h3>
+      <p id="local-status">Guardando...</p>
+    </div>
+
+    <div class="panel" id="session-panel">
+      <h3>sessionStorage</h3>
+      <p id="session-status">Guardando...</p>
+    </div>
+
+    <p style="margin-top:1.5rem;">
+      Ahora <a href="./otra.html">abre la página B</a> en <strong>otra pestaña del mismo navegador</strong>
+      para ver qué datos sobreviven entre páginas.
+    </p>
+
+    <script src="./code.js"></script>
+  </body>
+</html>
